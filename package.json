@@ -1,0 +1,28 @@
+{
+  "name": "create-yovy-app",
+  "version": "1.0.0",
+  "description": "A cli to create a simple template.",
+  "private": false,
+  "bin": {
+    "create-yovy-app": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "template"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "tsup",
+    "dev:tsup": "tsup --watch --sourcemap",
+    "dev:tsc": "tsc --watch"
+  },
+  "keywords": ["cli", "command"],
+  "author": "Yovy",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/prompts": "^2.4.9",
+    "prompts": "^2.4.2",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.5"
+  }
+}
